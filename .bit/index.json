@@ -54,5 +54,21 @@
     },
     "isSymlink": false,
     "hash": "f3eaf6905e683e3a07caa88471fa4fd5637fde13"
+  },
+  {
+    "id": {
+      "scope": null,
+      "name": "render-count-hook"
+    },
+    "isSymlink": true,
+    "hash": "6421a01d944648a80a05b2a65cf30c32b1ef6457"
+  },
+  {
+    "id": {
+      "scope": "sbrow.react",
+      "name": "render-count-hook"
+    },
+    "isSymlink": false,
+    "hash": "98e1beebb858c6be83d4e4fe9e68c533031811ff"
   }
 ]
