@@ -1,24 +1,24 @@
 export class Counter {
-  data: {
-    [name: string]: number;
-  } = {};
-  count(label: string = "default") {
+  public data: { [name: string]: number } = {};
+
+  public count(label: string = "default"): void {
     if (!(label in this.data)) {
       this.clear(label);
     }
     this.data[label]++;
     console.log(`${label}.renders: ${this.data[label]}`);
   }
-  get(label: string = "default"): number | undefined {
+
+  public get(label: string = "default"): number | undefined {
     if (label in this.data) {
       return this.data[label];
     }
     return undefined;
   }
-  clear(label: string = "default") {
+  public clear(label: string = "default"): void {
     this.data[label] = 0;
   }
-  clearAll() {
+  public clearAll(): void {
     this.data = {};
   }
 }

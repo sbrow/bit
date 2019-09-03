@@ -19,13 +19,17 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "src/components/render-count-hook/useRenderCounter.test.tsx",
+                "test": false,
+                "name": "useRenderCounter.test.tsx"
+            },
+            {
                 "relativePath": "src/components/render-count-hook/useRenderCounter.ts",
                 "test": false,
                 "name": "useRenderCounter.ts"
             }
         ],
         "mainFile": "src/components/render-count-hook/index.ts",
-        "trackDir": "src/components/render-count-hook",
         "origin": "AUTHORED",
         "exported": true
     },

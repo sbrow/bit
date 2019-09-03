@@ -1,3 +1,1 @@
-import { useRenderCounter } from "./useRenderCounter";
-
-export { useRenderCounter };
+export { useRenderCounter } from "./useRenderCounter";
