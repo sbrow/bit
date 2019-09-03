@@ -1,10 +1,13 @@
 import { fireEvent, render } from "@testing-library/react";
-import React, { useMemo, useReducer } from "react";
+import React, { Dispatch, useMemo, useReducer } from "react";
 
-import { renders, useRenderCounter } from "./useRenderCounter";
+import {
+  renders,
+  useRenderCounter,
+} from "../components/render-count-hook/useRenderCounter";
 
-function TestComponent() {
-  function reduce(count, action) {
+function TestComponent(): JSX.Element {
+  function reduce(count: number, action: { type: string }): number {
     switch (action.type) {
       case "inc":
         return count + 1;
@@ -27,24 +30,24 @@ function TestComponent() {
   );
 }
 
-function CounterView({ count }) {
+function CounterView({ count }: { count: number }): JSX.Element {
   return <p>Count: {count}</p>;
 }
 
-function IncrementButton({ dispatch }) {
+function IncrementButton({
+  dispatch,
+}: {
+  dispatch: Dispatch<any>;
+}): JSX.Element {
   useRenderCounter();
   return <button onClick={() => dispatch({ type: "inc" })}>Increment</button>;
 }
 
-// @ts-ignore
 describe("IncrementButton", () => {
-  // @ts-ignore
   it("only renders once", () => {
     const { getByText } = render(<TestComponent />);
-    // @ts-ignore
     expect(renders.get()).toBe(1);
     fireEvent.click(getByText("Increment"));
-    // @ts-ignore
     expect(renders.get()).toBe(1);
   });
 });

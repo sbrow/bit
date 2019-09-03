@@ -12,12 +12,6 @@
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "yarn"
   },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "bit.env",
-      "src"
-    ]
-  },
   "scripts": {
     "test": "jest",
     "build": "bit build",
@@ -32,6 +26,7 @@
     "jest": "^24.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.19.0",
     "typescript": "^3.6.2"
   }
