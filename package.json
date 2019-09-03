@@ -12,6 +12,13 @@
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "yarn"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "bit.env",
+      "dist"
+    ]
+  },
   "scripts": {
     "test": "jest",
     "build": "bit build",
