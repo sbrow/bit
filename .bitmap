@@ -29,5 +29,23 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "sbrow.react/use-interval-hook@2.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/use-interval-hook/README.md",
+                "test": false,
+                "name": "README.md"
+            },
+            {
+                "relativePath": "src/components/use-interval-hook/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/use-interval-hook/index.tsx",
+        "trackDir": "src/components/use-interval-hook",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.2.5"
 }
