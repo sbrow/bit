@@ -47,7 +47,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "sbrow.react/version-number@1.0.1": {
+    "sbrow.react/version-number@1.1.0": {
         "files": [
             {
                 "name": "README.md",
@@ -55,20 +55,15 @@
                 "test": false
             },
             {
-                "name": "VersionNumber.tsx",
-                "relativePath": "VersionNumber.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
+                "relativePath": "index.tsx",
+                "test": false,
+                "name": "index.tsx"
             }
         ],
-        "mainFile": "index.ts",
+        "mainFile": "index.tsx",
         "rootDir": "src/components/version-number",
-        "origin": "IMPORTED",
-        "originallySharedDir": "src/components/version-number"
+        "origin": "AUTHORED",
+        "exported": true
     },
     "version": "14.3.0"
 }
