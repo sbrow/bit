@@ -2,7 +2,7 @@
   "name": "bit",
   "description": "Code for bit packages",
   "author": "Spencer Brower",
-  "license": "GPL-3.0+",
+  "license": "MIT",
   "private": true,
   "workspaces": {
     "packages": [

@@ -1,9 +1,6 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "Code for react bits.",
-  "author": "Spencer Brower",
-  "license": "GPL-3.0+",
   "private": true,
   "bit": {
     "env": {
