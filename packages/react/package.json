@@ -1,0 +1,32 @@
+{
+  "name": "react",
+  "description": "Code for react bits.",
+  "author": "Spencer Brower",
+  "license": "GPL-3.0+",
+  "private": true,
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react-typescript@3.0.24",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    },
+    "componentsDefaultDirectory": "src/components/{name}",
+    "packageManager": "yarn"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "scripts": {
+    "test": "jest",
+    "//add": "bit add src/components/* --exclude *.test.*",
+    "tag": "bit tag",
+    "build": "bit build",
+    "publish": "bit export sbrow.react",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@bit/react-bootstrap.react-bootstrap.col": "file:./components/col",
+    "@bit/react-bootstrap.react-bootstrap.navbar": "file:./components/navbar",
+    "@bit/sbrow.react.version-number": "file:./components/version-number"
+  }
+}

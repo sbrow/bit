@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export type StopFunction = () => void;
 export type StartFunction = () => void;
@@ -13,22 +13,29 @@ export function useInterval(
   timeout: number,
   deps: ReadonlyArray<any> = [callback, timeout]
 ): [StopFunction, StartFunction] {
-  let int: number = 0;
+  const int = useRef(0);
+  // const [state, setState] = useState<number | undefined>(0);
 
   function stop(): void {
-    clearInterval(int);
+    clearInterval(int.current);
+    // clearInterval(state);
+    int.current = undefined;
+    // setState(undefined);
   }
 
   function start(): void {
     stop();
-    int = setInterval(callback, timeout);
+    int.current = setInterval(callback, timeout);
+    // setState(setInterval(callback, timeout));
   }
 
   useEffect(() => {
-    start();
+    if (int.current !== undefined) {
+      start();
+    }
 
     return stop;
-  }, deps);
+  }, [callback, timeout]);
 
   return [stop, start];
 }

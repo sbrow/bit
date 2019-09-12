@@ -4,24 +4,14 @@
   "author": "Spencer Brower",
   "license": "GPL-3.0+",
   "private": true,
-  "bit": {
-    "env": {
-      "compiler": "bit.envs/compilers/react-typescript@3.0.17",
-      "tester": "bit.envs/testers/jest@22.4.3"
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "yarn"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testPathIgnorePatterns": [
-      "bit.env",
-      "dist"
+  "workspaces": {
+    "packages": [
+      "packages/*"
     ]
   },
   "scripts": {
     "test": "jest",
-    "add": "bit add src/components/* --exclude *.test.*",
+    "//add": "bit add src/components/* --exclude *.test.*",
     "tag": "bit tag",
     "build": "bit build",
     "publish": "bit export sbrow.react",
@@ -47,15 +37,12 @@
     "bootstrap": "^4.3.1",
     "jest": "^24.9.0",
     "react": "^16.9.0",
+    "react-bootstrap": ">=1.0.0",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.1.1",
     "storybook-dark-mode": "^0.1.7",
     "ts-jest": "^24.0.2",
     "tslint": "^5.19.0",
     "typescript": "^3.6.2"
-  },
-  "dependencies": {
-    "@bit/react-bootstrap.react-bootstrap.col": "file:./components/col",
-    "@bit/react-bootstrap.react-bootstrap.navbar": "file:./components/navbar"
   }
 }

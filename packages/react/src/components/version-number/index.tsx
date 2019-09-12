@@ -23,3 +23,5 @@ export function VersionNumber({
     </Navbar>
   );
 }
+
+export default VersionNumber;

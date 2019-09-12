@@ -1,0 +1,15 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Spencer Brower",
+  "license": "MIT",
+  "private": true,
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/typescript@3.0.28"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}
