@@ -1,0 +1,20 @@
+{
+  "name": "@bit/sbrow.react.version-number",
+  "version": "1.0.1",
+  "homepage": "https://bit.dev/sbrow/react/version-number",
+  "main": "dist/version-number/index.js",
+  "dependencies": {
+    "react": "^16.9.0",
+    "@bit/react-bootstrap.react-bootstrap.col": "1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.navbar": "1.0.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react-typescript@3.0.17",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    }
+  }
+}
