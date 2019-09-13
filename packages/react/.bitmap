@@ -29,7 +29,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "sbrow.react/use-interval-hook@2.0.2": {
+    "sbrow.react/use-interval-hook@3.0.0": {
         "files": [
             {
                 "name": "README.md",
@@ -37,12 +37,12 @@
                 "test": false
             },
             {
-                "name": "index.tsx",
-                "relativePath": "src/components/use-interval-hook/index.tsx",
-                "test": false
+                "relativePath": "src/components/use-interval-hook/index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "src/components/use-interval-hook/index.tsx",
+        "mainFile": "src/components/use-interval-hook/index.ts",
         "trackDir": "src/components/use-interval-hook",
         "origin": "AUTHORED",
         "exported": true
