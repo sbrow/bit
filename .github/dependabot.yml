@@ -9,6 +9,8 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-    allow: all
+    allow:
+      # Allow both direct and indirect updates for all packages
+      - dependency-type: "all"
 
 
